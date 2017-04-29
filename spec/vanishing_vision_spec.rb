@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 RSpec.describe VanishingVision do
   it 'has a version number' do
     expect(VanishingVision::VERSION).not_to be nil
