@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'vanishing_vision'
+require 'vanishing_vision/version'
+require 'optparse'
+
+Version = VanishingVision::VERSION
+
+options = {}
+
+opt = OptionParser.new('usage: vanish [-a] path ...')
+opt.on('-a', '--auto-correct', 'auto correct (default is just to display)') {|v| options[:auto_correct] = true }
+opt.on('-v', '--version', 'version') {|v| options[:version] = true } # overwrite
+
+begin
+  opt.permute!(ARGV)
+
+  raise if options.empty? && ARGV.empty?
+
+  if options[:version]
+    puts "vanish #{VanishingVision::VERSION}"
+    exit
+  end
+
+  ARGV.each do |path|
+    VanishingVision.vanish(path, options)
+  end
+rescue
+  puts opt.help
+
+  exit!
+end

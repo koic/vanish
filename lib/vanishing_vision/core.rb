@@ -5,7 +5,11 @@ module VanishingVision
     end
 
     def vanish
-      lines = @source.dup.split("\n")
+      begin
+        lines = @source.dup.split("\n")
+      rescue
+        return # For example, it occurs in UTF-32[BUG]
+      end
 
       lines.map!(&:rstrip)
 
