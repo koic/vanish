@@ -1,5 +1,5 @@
 require 'vanishing_vision/version'
 
-module VanishingVision
-  # Your code goes here...
-end
+module VanishingVision end
+
+require 'vanishing_vision/core'
