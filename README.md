@@ -1,13 +1,13 @@
-# Vanishing Vision
+# vanish
 
-Vanishing Vision erases the useless white space in the text file.
+`vanish` removes the useless white space in the text file.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'vanishing_vision'
+gem 'vanish'
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 Or install it yourself as:
 
 ```sh
-% gem install vanishing_vision
+% gem install vanish
 ```
 
 ## Usage
@@ -27,19 +27,33 @@ Or install it yourself as:
 Display the contents to apply vanish command on standard output.
 
 ```sh
-% vanish
+% vanish .
 ```
 
 It corrects automatically by vanish command.
 
 ```sh
-% vanish -a
+% vanish -a .
 ```
 
 or
 
 ```sh
-% vanish --auto-correct
+% vanish --auto-correct .
+```
+
+As a result, remove blank lines at the top and bottom of the file and a white space at the end of line.
+
+
+```diff
+-
+-
+  def say
+-   puts 'hello'  
++   puts 'hello'
+  end
+-
+-
 ```
 
 ## Development
@@ -50,8 +64,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/koic/vanishing_vision.
+Bug reports and pull requests are welcome on GitHub at https://github.com/koic/vanish.
 
 ## License
 
-Vanishing Vision is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+vanish is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
