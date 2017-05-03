@@ -1,22 +1,8 @@
-# vanish
+# vanish [![Build Status](https://travis-ci.org/koic/vanish.svg)](https://travis-ci.org/koic/vanish) [![Gem Version](https://badge.fury.io/rb/vanish.svg)](http://badge.fury.io/rb/vanish) [![git.legal](https://git.legal/projects/3962/badge.svg "Number of libraries approved")](https://git.legal/projects/3962)
 
 `vanish` removes the useless white space in the text file.
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'vanish'
-```
-
-And then execute:
-
-```sh
-% bundle
-```
-
-Or install it yourself as:
 
 ```sh
 % gem install vanish
