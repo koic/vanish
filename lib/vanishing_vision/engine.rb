@@ -4,6 +4,8 @@ Diffy::Diff.default_format = :color
 
 module VanishingVision
   class Engine
+    SKIP_ENCODINGS = [NKF::BINARY, NKF::UNKNOWN]
+
     def initialize(path)
       @path = path
     end
@@ -11,7 +13,7 @@ module VanishingVision
     def run(auto_correct)
       source = File.read(@path)
 
-      return if NKF.guess(source) == Encoding::ASCII_8BIT
+      return if SKIP_ENCODINGS.include?(NKF.guess(source))
 
       core = Core.new(source)
 
