@@ -13,19 +13,19 @@
 Display the contents to apply vanish command on standard output.
 
 ```sh
-% vanish .
+% vanish
 ```
 
 It corrects automatically by vanish command.
 
 ```sh
-% vanish -a .
+% vanish -a
 ```
 
 or
 
 ```sh
-% vanish --auto-correct .
+% vanish --auto-correct
 ```
 
 As a result, remove blank lines at the top and bottom of the file and a white space at the end of line.
