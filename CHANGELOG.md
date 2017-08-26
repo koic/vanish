@@ -1,4 +1,4 @@
-## Unreleased
+## 0.2.0
 
 - If you omit the path, target the current directory.
 
