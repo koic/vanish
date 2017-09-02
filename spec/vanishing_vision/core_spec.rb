@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe VanishingVision::Core do
   describe '#vanish' do
     subject { VanishingVision::Core.new(text).vanish }

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module VanishingVision
   class Core
     def initialize(source)
