@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'nkf'
 require 'pathname'
 
 require 'vanishing_vision/core'

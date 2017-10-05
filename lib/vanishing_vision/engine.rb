@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'diffy'
+require 'nkf'
 
 Diffy::Diff.default_format = :color
 
